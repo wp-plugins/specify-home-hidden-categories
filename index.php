@@ -2,15 +2,11 @@
 /*
 Plugin Name: Specify Home Hidden Categories
 Description: Specify the Homepage&RSS hidden under all the article
-Plugin URI: http://www.9sep.org/
-Version: 0.1.0
+Plugin URI: http://www.9sep.org/specify-home-hidden-categories
+Version: 0.1.1
 Author: Zhys
 Author URI: http://www.9sep.org/author/zhys
-Author Email: Zhys@9sep.org
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Copyright 2014 九秒 (Zhys@9sep.org)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as

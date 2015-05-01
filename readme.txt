@@ -4,9 +4,8 @@ Tags:  SHHC,Specify,exclude,hide,related,HiddenCategories,Specify Home Hidden,ca
 Donate link: http://www.9sep.org/specify-home-hidden-categories
 Stable tag: 0.1.1
 Requires at least: 3.5
-Tested up to: 4.1
+Tested up to: 4.2.1
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Specify the Home hidden under all the article，Set up one or more categories, as long as the article is contained in the specified category, then the article will be Home and in RSS were hidden, and can see only guest access to the category, it advantage is that do not affect other plugins with have_posts () and get_posts () ... Function access to all of the text. :)
 
