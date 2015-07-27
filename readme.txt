@@ -2,15 +2,15 @@
 Contributors: yzhs
 Tags:  SHHC,Specify,exclude,hide,related,HiddenCategories,Specify Home Hidden,categories,Cat,options,Homepage,Home,feed,rss,get_posts,have_posts,the_post,Hidden,page,post,Posts,All,首页隐藏特定分类,首页排除指定文章不显示,隐藏分类,隐藏文章,隐藏指定分类目录文章
 Donate link: http://www.9sep.org/specify-home-hidden-categories
-Stable tag: 0.1.1
+Stable tag: 0.2.0
 Requires at least: 3.5
-Tested up to: 4.2.1
+Tested up to: 4.2.3
 License: GPLv2 or later
 
 Specify the Home hidden under all the article，Set up one or more categories, as long as the article is contained in the specified category, then the article will be Home and in RSS were hidden, and can see only guest access to the category, it advantage is that do not affect other plugins with have_posts () and get_posts () ... Function access to all of the text. :)
 
 == Description ==
-English: 
+English:
 Specify the Home hidden under all the article，Set up one or more categories, as long as the article is contained in the specified category, then the article will be Home and in RSS were hidden, and can see only guest access to the category, it advantage is that do not affect other plugins with have_posts () and get_posts () ... Function access to all of the text. :)
 
 中文:
@@ -27,11 +27,12 @@ Ps:No articles in the category are not of our choosing, so you should create a g
 2. Activate Specify Home Hidden Categories plugins it
 3. Go to \"Settings» Reading \"to choose the category need to hide
 
-中文:预先创建好一个或者多个用于隐藏的分类目录并确保分类中含有一篇文章。前往“设置”--->“阅读”，在最下方选择需要的隐藏分类吧，只有选定好需要隐藏的分类目录，分类目录下的所有文章不会在首页和RSS(首页的)上显示。
+中文:预先创建好一个或者多个用于隐藏的分类目录并确保分类中含有一篇文章。
+前往“设置”--->“阅读”，在最下方选择需要的隐藏分类吧，只有选定好需要隐藏的分类目录，分类目录下的所有文章不会在首页和RSS(首页的)上显示。
 
 == Screenshots ==
 1. Specify Categories Options Section
-2. Hide Choose Post Categories Options 
+2. Hide Choose Post Categories Options
 
 == Frequently Asked Questions ==
 English: author/[zhys](http://www.9sep.org/author/zhys) English is so bad, you can help me with a simple question-and-answer feature, please?
@@ -43,14 +44,21 @@ English: author/[zhys](http://www.9sep.org/author/zhys) English is so bad, you c
 *	English: Update readme.txt and screenshot
 *	中文：更新readme文件以及截图
 
+= 0.2.0 =
+*	English: Select the parent category will be hidden under all the children categories
+*	中文：选择父分类时将隐藏其下所有子孙分类
+
 == Reviews ==
 *	中文：
 应用首页:[九秒分享](https://www.9sep.org/)使用Specify Home Hidden Categories(SHHC)后所显示所有分类下前10篇文章数量
 子页对比:[站点地图](https://www.9sep.org/)使用Specify Home Hidden Categories(SHHC)所所显示所有分类下前50篇文章数量
 可以得见使用此插件不影响其它页面/分类页面对于文章展示数量的缺失或者劫持的情况。
-*	English: 
+*	English:
 Comparing two pages above to see this plugin will not interfere with any other show page for all articles on all pages of the article, the number of articles
 ---Author's English was very poor don't worry lol ~
 
 == Upgrade Notice ==
 2015-01-16 16	Tested up to: 4.1
+2015-07-27 14	Tested up to: 4.2.3
+
+

@@ -3,7 +3,7 @@
 Plugin Name: Specify Home Hidden Categories
 Description: Specify the Homepage&RSS hidden under all the article
 Plugin URI: http://www.9sep.org/specify-home-hidden-categories
-Version: 0.1.1
+Version: 0.2.0
 Author: Zhys
 Author URI: http://www.9sep.org/author/zhys
 License: GPLv2 or later
@@ -59,14 +59,39 @@ function specify_homepage_cats_callback_function(){
     echo $html;
 }
 
-function specifycats($query){
-if( is_home() ){
-	if ( $query->is_home ) {
-		$query->set('category__not_in', get_option('specify_cats'));
-	}	
-	if ( $query->is_feed ) {
-		$query->set('category__not_in', get_option('specify_cats'));
-	}	
+function getchild($id){
+	$result = explode('/',get_category_children($id));
+	$childs = array();
+	foreach($result as $i){
+		if(!empty($i))$childs[] = get_category($i);
+	}
+	return $childs;
 }
+
+function array_get_by_key(array $array, $string){
+    if (!trim($string)) return false;
+    preg_match_all("/\"$string\";\w{1}:(?:\d+:|)(.*?);/", serialize($array), $res);
+    return $res[1];
+}
+
+function hidecats($catID){
+	$cata=array();
+	foreach($catID as $i){
+		if(!empty($i))$cata[] = get_category($i);
+		if(get_category_children($i)!=""){
+			$cata[]=getchild($i);
+		}else{
+			$cata[]=$i;
+		}
+	}
+	return array_unique(array_get_by_key($cata,'term_id'));
+}
+
+function specifycats($query){
+	if ( $query->is_home || $query->is_feed ) {
+		$query->set('category__not_in', hidecats(get_option('specify_cats')));
+	}
 	return $query;
 }
+
+
